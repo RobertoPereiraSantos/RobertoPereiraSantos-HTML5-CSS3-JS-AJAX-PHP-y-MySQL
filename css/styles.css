@@ -1,0 +1,67 @@
+:root {
+    --white: #ffffff;
+    --dark: #212121;
+    --primary: #ffc107;
+    --secondary: #0097a7;
+    --grat: #757575;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secondary);
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .main-navigation {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.main-navigation a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main-navigation a:hover {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.hero {
+    background-image: url(../img/kirito.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
